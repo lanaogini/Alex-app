@@ -1,0 +1,39 @@
+/* Hero-блок с анимацией */
+.hero {
+  background: linear-gradient(135deg, #5353f9, #025088);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Заголовок */
+.hero-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s forwards 0.3s;
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp 1s forwards 0.6s;
+}
+
+
+/* Анимация */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

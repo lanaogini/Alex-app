@@ -1,0 +1,133 @@
+.footer {
+  background: linear-gradient(135deg, #060667, #0a3d62);
+  color: #ffffff;
+  padding: 20px 10px 10px 10px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-contact,
+.footer-right {
+  flex: 1 1 250px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+  text-align: left;      
+  padding-left: 20px;    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;             
+}
+
+.footer-languages {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-languages button {
+  background-color: #0a3d62;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.footer-languages button:hover {
+  background-color: #82ccdd;
+}
+
+.footer-languages button.active {
+  background-color: #ffffff;
+  color: #0a3d62;
+  font-weight: bold;
+}
+
+.footer-contact {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;         
+  text-align: left;  
+  padding: 0 15px;   
+  margin-left: 100px; 
+}
+
+.footer-contact p {
+  margin: 2px 0;      
+  line-height: 1.2;   
+}
+.footer-contact h4 {
+  margin-bottom: 5px; 
+}
+
+.footer-right {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  padding-right: 20px; 
+}
+ 
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a svg {
+  font-size: 22px;
+  transition: color 0.3s, transform 0.3s;
+  color: #ffffff;
+}
+
+.social-links a:hover svg {
+  color: red;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;   
+  padding: 5px 0;    
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-contact,
+  .footer-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .footer-languages {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
